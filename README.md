@@ -41,4 +41,16 @@ cd frontend &&  npm run dev
 
 This is API collection
 
+```angular2html
+login info 
+email : saiwinoo52@gmail.com
+password : password
+```
+
+```angular2html
+login info for api admin 
+email : admin@gmail.com 
+password : password
+```
+
 https://drive.google.com/file/d/1WU6S0ptUXo7HWy5L6HiL8hLjRiaFuyZk/view?usp=sharing
