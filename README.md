@@ -25,8 +25,12 @@ cp .env.example .env
 ```
 php artisan key:generate
 ```
-Run server
+- Link storage
 ```
+php artisan storage:link
+```
+Run server
+
 - Install packages for frontend
 
 ```
@@ -42,7 +46,7 @@ cd frontend &&  npm run dev
 This is API collection
 
 ```angular2html
-login info
+login info 
 email : saiwinoo52@gmail.com
 password : password
 ```
