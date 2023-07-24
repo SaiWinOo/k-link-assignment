@@ -49,7 +49,7 @@ cd ../frontend && npm install
 
 Run frontend
 ```
-cd frontend &&  npm run dev
+  npm run dev
 ```
 
 This is API collection

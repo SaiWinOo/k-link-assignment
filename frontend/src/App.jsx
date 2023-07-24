@@ -5,7 +5,7 @@ import axios from "axios";
 import {useEffect} from "react";
 
 const App = () => {
-    axios.defaults.baseURL = 'https://coireader.linmathematics.com/api/';
+    axios.defaults.baseURL = 'http://localhost:8000/api/';
     const dispatch = useDispatch();
     const user = useSelector(state => state.user);
 
