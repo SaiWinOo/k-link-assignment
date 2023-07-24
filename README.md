@@ -29,7 +29,13 @@ php artisan key:generate
 ```
 php artisan storage:link
 ```
-Run server
+
+- Run migration
+
+```angular2html
+php artisan migrate --seed
+```
+- Run server
 
 ```angular2html
 php artisan serve
