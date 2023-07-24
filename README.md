@@ -31,13 +31,16 @@ php artisan storage:link
 ```
 Run server
 
+```angular2html
+php artisan serve
+```
+
 - Install packages for frontend
 
 ```
 cd ../frontend && npm install
 ```
-cd backend && php artisan serve
-```
+
 Run frontend
 ```
 cd frontend &&  npm run dev
