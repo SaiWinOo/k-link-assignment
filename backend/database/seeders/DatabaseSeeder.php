@@ -41,23 +41,14 @@ class DatabaseSeeder extends Seeder
             'Electronics',
             'Laptops',
             'Smartphones',
-            'Clothing',
             'Men\'s Fashion',
             'Women\'s Fashion',
             'Accessories',
             'Home Appliances',
-            'Furniture',
             'Books',
-            'Sports Gear',
-            'Beauty Products',
             'Toys',
-            'Jewelry',
-            'Outdoor Equipment',
             'Gaming',
-            'Health and Wellness',
             'Automotive',
-            'Pet Supplies',
-            'Art and Crafts'
         ];
         foreach ($tags as $tag) {
             Tag::create(['name' => $tag]);

@@ -81,6 +81,9 @@ class ProductController extends Controller
         $request->price && $product->price = $request->price;
         $request->tag_id && $product->tag_id = $request->tag_id;
         if ($request->has('image')) {
+            if($product->originImage){
+                Storage::delete($product->originImage);
+            }
             $img_name = $request->file('image')->store('public/products');
             $product->image = $img_name;
         }
@@ -93,9 +96,7 @@ class ProductController extends Controller
         ]);
     }
 
-    /**
-     * Remove the specified resource from storage.
-     */
+
     public function destroy(string $id): JsonResponse
     {
         $product = Product::where('id', $id)->first();
