@@ -99,6 +99,12 @@ const Home = () => {
                     <BiCart className={'text-2xl'}/>
                 </div>
                 <Tags/>
+                {
+                    !isLoading && !products.products?.length && 
+                    <div className='text-center my-5 text-gray-600 py-5 text-2xl '>
+                        No products found!
+                    </div>
+                }
                 <div className={'mx-auto products-container no-scrollbar overflow-scroll h-[90vh]'}>
                     <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4  pt-5 mt-3 '>
                         {products.products && products.products.map((item) => (
