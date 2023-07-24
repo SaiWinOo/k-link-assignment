@@ -3,6 +3,10 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+
+use App\Models\Role;
+use App\Models\Tag;
+use App\Models\User;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -12,11 +16,52 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // \App\Models\User::factory(10)->create();
 
-        // \App\Models\User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
+        $roles = ['admin', 'user'];
+        foreach ($roles as $role) {
+            Role::create(['name' => $role]);
+        }
+
+        User::create([
+            'name' => 'Sai Win Oo',
+            'email' => 'saiwinoo52@gmail.com',
+            'password' => 'password',
+            'role_id' => 2,
+        ]);
+
+        User::create([
+            'name' => 'Admin',
+            'email' => 'admin@gmail.com',
+            'password' => 'password',
+            'role_id' => 1,
+        ]);
+
+
+        $tags = [
+            'Electronics',
+            'Laptops',
+            'Smartphones',
+            'Clothing',
+            'Men\'s Fashion',
+            'Women\'s Fashion',
+            'Accessories',
+            'Home Appliances',
+            'Furniture',
+            'Books',
+            'Sports Gear',
+            'Beauty Products',
+            'Toys',
+            'Jewelry',
+            'Outdoor Equipment',
+            'Gaming',
+            'Health and Wellness',
+            'Automotive',
+            'Pet Supplies',
+            'Art and Crafts'
+        ];
+        foreach ($tags as $tag) {
+            Tag::create(['name' => $tag]);
+        };
+
     }
 }
