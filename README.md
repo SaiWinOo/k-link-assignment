@@ -10,12 +10,7 @@ git clone https://github.com/SaiWinOo/k-link-assignment.git
 ```
 - Then install packages for backend
 ```
-cd backend && composer install && npm install
-```
-- Install packages for frontend
-
-```
-cd frontend && npm install
+cd k-link-assignment/backend && composer install && npm install
 ```
 - Create a database
 ```
@@ -32,6 +27,11 @@ php artisan key:generate
 ```
 Run server
 ```
+- Install packages for frontend
+
+```
+cd ../frontend && npm install
+```
 cd backend && php artisan serve
 ```
 Run frontend
@@ -42,14 +42,14 @@ cd frontend &&  npm run dev
 This is API collection
 
 ```angular2html
-login info 
+login info
 email : saiwinoo52@gmail.com
 password : password
 ```
 
 ```angular2html
-login info for api admin 
-email : admin@gmail.com 
+login info for api admin
+email : admin@gmail.com
 password : password
 ```
 
